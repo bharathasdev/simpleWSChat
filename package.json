@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "startwebserver": "http-server",
+    "startchatserver":"nodemon server.js",
+    "devStart": "nodemon server.js && http-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^0.12.3",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
